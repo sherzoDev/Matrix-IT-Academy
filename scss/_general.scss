@@ -22,9 +22,19 @@ img {
 
 body {
     @include sticky-footer;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+ul {
+    @include list-unstyle;
+}
+
+a {
+    @include link-unstyle;
 }
 
 /* STICKY-FOOTER */
+
 .site-main {
     flex-grow: 1;
 }
