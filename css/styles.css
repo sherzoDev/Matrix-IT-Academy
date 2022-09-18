@@ -447,6 +447,13 @@ a {
           flex-grow: 1;
 }
 
+/* Variables */
+:root {
+  --main-white-color: #fff;
+  --main-black-color: #000;
+  --main-text-color: #00B654;
+}
+
 /* Site Container */
 .site-container {
   max-width: 1390px;
@@ -563,8 +570,6 @@ a {
   }
   .nav__list {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .nav__link {
     font-weight: 500;
@@ -616,7 +621,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: var(--main-white-color);
   margin: 0;
 }
 
@@ -629,8 +634,7 @@ a {
 }
 
 .hero__btn {
-  max-width: 176px;
-  width: 100%;
+  width: 176px;
   height: 51px;
   text-align: center;
   padding-top: 14px;
@@ -640,7 +644,13 @@ a {
   display: inline-block;
   background: #01F573;
   border-radius: 28px;
-  color: #000000;
+  color: var(--main-black-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.hero__btn:hover {
+  color: var(--main-white-color);
 }
 
 .hero__more {
@@ -674,7 +684,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: var(--main-white-color);
   width: 253px;
   height: 52px;
 }
@@ -696,7 +706,7 @@ a {
     line-height: 117px;
   }
   .hero__text {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 19px;
     line-height: 40px;
   }
@@ -711,13 +721,38 @@ a {
     line-height: 37px;
     text-align: center;
   }
+  .hero__sum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__btn-box {
+    margin-top: 36px;
+  }
+  .hero__btn {
+    width: 265px;
+  }
+  .hero__more {
+    margin-bottom: 0px;
+    margin-left: 19px;
+  }
+  .hero__news {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .nav__title {
     font-size: 96px;
   }
   .hero__text {
-    font-size: 22px;
+    font-size: 25px;
     max-width: 970px;
     width: 100%;
     height: 80px;
@@ -733,4 +768,109 @@ a {
     line-height: 37px;
     text-align: center;
   }
+}
+.about__wrapper {
+  padding-top: 67px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+.about__text {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-black-color);
+}
+
+.about__main-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about__btn {
+  margin-bottom: 67px;
+  margin-top: 37px;
+}
+.about__btn::after {
+  background-image: url("../images/about-arrow.svg");
+}
+
+.about__btn a {
+  margin-bottom: 67px;
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #01F573;
+}
+.about__btn a::after {
+  content: "";
+  background-image: url("../images/about-arrow.svg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__title {
+    font-size: 65px;
+  }
+  .about__text {
+    font-size: 16px;
+  }
+  .about__main-text {
+    font-size: 20px;
+  }
+  .about__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about__title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+  }
+  .about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .about__boxes {
+    margin-top: 53px;
+  }
+  .about__main-text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.footer {
+  background-color: var(--main-black-color);
 }/*# sourceMappingURL=styles.css.map */
