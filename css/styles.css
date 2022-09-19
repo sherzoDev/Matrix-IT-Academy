@@ -777,7 +777,8 @@ a {
 }
 
 .about__title,
-.program__title {
+.program__title,
+.courses__title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -786,7 +787,8 @@ a {
 }
 
 .about__text,
-.program__text {
+.program__text,
+.courses__text {
   margin-top: 11px;
   font-weight: 400;
   font-size: 14px;
@@ -835,11 +837,13 @@ a {
 
 @media only screen and (min-width: 768px) {
   .about__title,
-.program__title {
+.program__title,
+.courses__title {
     font-size: 65px;
   }
   .about__text,
-.program__text {
+.program__text,
+.courses__text {
     font-size: 16px;
   }
   .about__main-text {
@@ -860,13 +864,15 @@ a {
 }
 @media only screen and (min-width: 1024px) {
   .about__title,
-.program__title {
+.program__title,
+.courses__title {
     font-weight: 700;
     font-size: 80px;
     line-height: 98px;
   }
   .about__text,
-.program__text {
+.program__text,
+.courses__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -973,6 +979,49 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+.courses {
+  padding-top: 52px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button::before {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+  margin-right: 10px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: var("--bs-accordion-btn-icon-transition");
+  -o-transition: var("--bs-accordion-btn-icon-transition");
+  transition: var("--bs-accordion-btn-icon-transition");
+}
+
+.accordion-flush .accordion-item {
+  border: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .courses__accardion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .courses__accardion {
+    margin-top: 62px;
   }
 }
 .footer {

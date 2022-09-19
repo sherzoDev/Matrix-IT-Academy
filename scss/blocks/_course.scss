@@ -1,0 +1,37 @@
+.courses {
+  padding-top: 52px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  content: "";
+  margin-right: 10px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var("--bs-accordion-btn-icon-transition");
+}
+
+.accordion-flush .accordion-item {
+  border: none;
+}
+
+@include mobile-first(992px) {
+
+  .courses__accardion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .courses__accardion {
+    margin-top: 62px;
+  }
+
+}

@@ -3,7 +3,8 @@
 }
 
 .about__title,
-.program__title {
+.program__title,
+.courses__title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -12,7 +13,8 @@
 }
 
 .about__text,
-.program__text {
+.program__text,
+.courses__text {
   margin-top: 11px;
   font-weight: 400;
   font-size: 14px;
@@ -62,12 +64,14 @@
 @include mobile-first(768px) {
 
   .about__title,
-  .program__title {
+  .program__title,
+  .courses__title {
     font-size: 65px;
   }
 
   .about__text,
-  .program__text {
+  .program__text,
+  .courses__text {
     font-size: 16px;
   }
 
@@ -87,14 +91,16 @@
 @include mobile-first(1024px) {
 
   .about__title,
-  .program__title {
+  .program__title,
+  .courses__title {
     font-weight: 700;
     font-size: 80px;
     line-height: 98px;
   }
 
   .about__text,
-  .program__text {
+  .program__text,
+  .courses__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
