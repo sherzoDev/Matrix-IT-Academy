@@ -2,7 +2,8 @@
   padding-top: 67px;
 }
 
-.about__title {
+.about__title,
+.program__title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -10,7 +11,8 @@
   margin: 0;
 }
 
-.about__text {
+.about__text,
+.program__text {
   margin-top: 11px;
   font-weight: 400;
   font-size: 14px;
@@ -59,19 +61,22 @@
 
 @include mobile-first(768px) {
 
-  .about__title {
+  .about__title,
+  .program__title {
     font-size: 65px;
   }
 
-  .about__text {
+  .about__text,
+  .program__text {
     font-size: 16px;
   }
 
   .about__main-text {
     font-size: 20px;
   }
-  
-  .about__btn {
+
+  .about__btn,
+  .program__btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -81,13 +86,15 @@
 
 @include mobile-first(1024px) {
 
-  .about__title {
+  .about__title,
+  .program__title {
     font-weight: 700;
     font-size: 80px;
     line-height: 98px;
   }
 
-  .about__text {
+  .about__text,
+  .program__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;

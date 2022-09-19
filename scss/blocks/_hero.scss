@@ -62,11 +62,13 @@
 
 }
 
-.hero__more {
+.hero__more,
+.program__btn {
   margin-bottom: 39px;
 }
 
-.hero__more a {
+.hero__more a,
+.program__btn a {
   display: flex;
   align-items: center;
   font-weight: 500;
