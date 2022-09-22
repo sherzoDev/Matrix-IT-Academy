@@ -5,3 +5,83 @@
   background-color: #0F100F;
   color: var(--main-white-color);
 }
+
+.lessons__item {
+  display: flex;
+  align-items: center;
+}
+
+.lessons__item::before {
+  content: "";
+  background-image: url("../images/check.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 70px;
+  height: 78.28px;
+  margin-right: 33px;
+}
+
+.lessons__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--main-white-color);
+}
+
+.lessons__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@include mobile-first(768px) {
+
+  .lessons__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+ 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .lessons__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lessons__item:nth-child(2) {
+    margin-left: 50px;
+  }
+
+}
+
+@include mobile-first(1024px) {
+
+  .lessons {
+    padding-top: 153px;
+    padding-bottom: 118px;
+  }
+
+  .lessons__main-head {
+    font-size: 98px;
+  }
+
+  .lessons__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lessons__item::before {
+    margin-right: 21px;
+  }
+
+  .lessons__head {
+    margin-bottom: 73px;
+  }
+
+}
