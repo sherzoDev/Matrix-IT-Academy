@@ -1027,7 +1027,7 @@ a {
 .lessons {
   padding-top: 42px;
   padding-bottom: 48px;
-  background-image: url("../../images/backrgound.svg");
+  background-image: url("../images/backrgound.svg");
   background-color: #0F100F;
   color: var(--main-white-color);
 }
@@ -1066,6 +1066,193 @@ a {
   line-height: 25px;
 }
 
+.lessons__main-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lessons__main-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lessons__main-item:nth-child(1)::before {
+  background-image: url("../images/training.svg");
+  content: "";
+  display: inline-block;
+  width: 93px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-item:nth-child(2)::before {
+  background-image: url("../images/strategy.svg");
+  content: "";
+  display: inline-block;
+  width: 189px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-item:nth-child(3)::before {
+  background-image: url("../images/competition.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: inline-block;
+  width: 189px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-item-list,
+.lessons__main-item-lisr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lessons__main-item-list:nth-child(1)::before {
+  background-image: url("../images/qualified-students.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: inline-block;
+  width: 189px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-list:nth-child(2) {
+  margin: 0;
+}
+
+.lessons__main-item-list:nth-child(2)::before {
+  background-image: url("../images/modern-knowledge.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: inline-block;
+  width: 189px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-item-lisr::before {
+  background-image: url("../images/practical-knowledge.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: inline-block;
+  width: 189px;
+  height: 106px;
+  margin-bottom: 25px;
+}
+
+.lessons__main-list {
+  margin-top: 33px;
+}
+
+.lessons__main {
+  padding-left: 63px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 118px;
+  margin-top: 79px;
+  max-width: 1290px;
+  width: 100%;
+  height: 785px;
+  border-radius: 41px;
+  border: 1px solid #ddd;
+}
+
+.lessons__main-link {
+  margin-bottom: 83px;
+}
+
+.lessons__main-strong {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.lessons__main-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #A0A6A3;
+  margin-top: 4px;
+}
+
+.lessons__main-btn {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-decoration: none;
+  color: var(--main-white-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.lessons__main-btn:hover {
+  color: #ddd;
+}
+.lessons__main-btn::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow-light.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 20px;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .lessons__main {
+    padding-left: 28px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 10px;
+    margin-top: 79px;
+    max-width: 1290px;
+    width: 100%;
+    height: 1681px;
+    border-radius: 41px;
+    border: 1px solid #ddd;
+  }
+  .lessons__main-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media only screen and (min-width: 768px) {
   .lessons__list {
     display: -webkit-box;
@@ -1102,72 +1289,11 @@ a {
   .lessons__main-head {
     font-size: 98px;
   }
-  .lessons__main {
-    padding-left: 63px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 118px;
-    margin-top: 79px;
-    width: 1358px;
-    height: 785px;
-    border-radius: 41px;
-    border: 1px solid #ddd;
-  }
-  .lessons__main-list {
-    margin-top: 83px;
-  }
   .lessons__main-strong {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     text-align: center;
-  }
-  .lessons__main-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .lessons__main-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .lessons__main-item:nth-child(1)::before {
-    background-image: url("../images/training.svg");
-    content: "";
-    display: inline-block;
-    width: 93px;
-    height: 106px;
-    margin-bottom: 25px;
-  }
-  .lessons__main-item:nth-child(2)::before {
-    background-image: url("../images/strategy.svg");
-    content: "";
-    display: inline-block;
-    width: 189px;
-    height: 106px;
-    margin-bottom: 25px;
-  }
-  .lessons__main-item:nth-child(3)::before {
-    background-image: url("../../images/");
-    content: "";
-    display: inline-block;
-    width: 189px;
-    height: 106px;
-    margin-bottom: 25px;
   }
   .lessons__main-text {
     font-weight: 400;
