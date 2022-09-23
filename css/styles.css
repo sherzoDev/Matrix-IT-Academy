@@ -1517,6 +1517,7 @@ a {
     background-position: center;
   }
   .footer__text {
+    text-align: start;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
