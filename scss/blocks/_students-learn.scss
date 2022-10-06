@@ -48,11 +48,20 @@
     display: inline-block;
     width: 82.49px;
     height: 82.49px;
+    margin-top: 150px;
   }
 
 }
 
 @include mobile-first(1024px) {
+
+  .learn-item-box {
+    width: 443px;
+    height: 417px;
+    background: #FFFFFF;
+    box-shadow: 0px 52px 41px 13px rgba(0, 0, 0, 0.05);
+    border-radius: 11px;
+  }
 
   .learn-studen-title {
     font-weight: 500;
