@@ -1465,6 +1465,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  margin-left: 50px;
 }
 .learn-item::before {
   content: "";
@@ -1473,9 +1475,11 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 82.49px;
-  height: 82.49px;
-  margin-top: 150px;
+  width: 52.49px;
+  height: 52.49px;
+  position: absolute;
+  bottom: 0;
+  left: -50px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1495,6 +1499,10 @@ a {
   .learn-stuent-spam {
     font-weight: 700;
     color: #00DB65;
+  }
+  .learn-item::before {
+    width: 82px;
+    height: 82px;
   }
 }
 .footer {

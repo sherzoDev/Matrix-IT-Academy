@@ -38,6 +38,8 @@
 
 .learn-item {
   display: flex;
+  position: relative;
+  margin-left: 50px;
 
   &::before {
     content: "";
@@ -46,9 +48,11 @@
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 82.49px;
-    height: 82.49px;
-    margin-top: 150px;
+    width: 52.49px;
+    height: 52.49px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
   }
 
 }
@@ -72,6 +76,11 @@
   .learn-stuent-spam {
     font-weight: 700;
     color: #00DB65;
+  }
+
+  .learn-item::before {
+    width: 82px;
+    height: 82px;
   }
 
 }
